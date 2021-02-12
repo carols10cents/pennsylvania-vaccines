@@ -12,5 +12,6 @@ module.exports = {
   },
   'rules': {
     'max-len': [2, 2000, 4],
+    'indent': 'ignoreComments',
   },
 };
