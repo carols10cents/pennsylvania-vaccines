@@ -1,11 +1,11 @@
-module.exports = (url) => {
+module.exports = (url, name) => {
   return {
     blocks: [
       {
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: '*Vaccines are available! 💉 @channel*',
+          text: `*Vaccines are available from ${name}! 💉 @channel*`,
         },
       },
       {
@@ -18,7 +18,7 @@ module.exports = (url) => {
           type: 'button',
           text: {
             type: 'plain_text',
-            text: 'Schedule',
+            text: `Schedule at ${name}`,
             emoji: true,
           },
           value: 'vaccine',
