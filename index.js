@@ -1,8 +1,6 @@
 const express = require('express');
 const cron = require('node-cron');
 const fetch = require('node-fetch');
-
-const cronJobInterval = '*/1 * * * *';
 const checkWeis = require('./crawlers/weis');
 const checkLancaster = require('./crawlers/lancaster');
 const checkMacdonalds = require('./crawlers/macdonalds');
@@ -13,6 +11,7 @@ const checkChambers = require('./crawlers/chambers');
 const checkCNS = require('./crawlers/cns');
 const checkGeisinger = require('./crawlers/geisinger');
 const checkGiant = require('./crawlers/giant');
+const cronJobInterval = '*/3 * * * *';
 
 app = express();
 
