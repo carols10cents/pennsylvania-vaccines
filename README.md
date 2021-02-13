@@ -59,6 +59,6 @@ Once you've found the request, it's time to copy the request code so that we can
 
 <img alt="Copy as Node.js fetch" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example2.png">
 
-<img alt="Copy as Node.js fetch" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example2.png">
+<img alt="Copy as Node.js fetch" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example3.png">
 
 Paste that Node.js fetch into your text editor, and use the fetch URL as the `dataUrl`. You can use the websites main URL as the `scheduleURL`, and change the response handler's conditional to test if the `No Availability` text exists when we retrieve the response. Don't forget to change the `checkExample` function definition and export to match whatever the name of the facility is (e.g. `checkBirdsboro`), and finally update `index.js` to include your new crawler by adding `await checkBirdsboro()` to the main function.
