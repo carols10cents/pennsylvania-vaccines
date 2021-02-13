@@ -12,6 +12,8 @@ const checkCNS = require('./crawlers/cns');
 const checkGeisinger = require('./crawlers/geisinger');
 const checkGiant = require('./crawlers/giant');
 const checkBirdsboro = require('./crawlers/birdsboro');
+const checkIndependent = require('./crawlers/independent');
+const checkRiteAid = require('./crawlers/rite-aid');
 const cronJobInterval = '*/2 * * * *';
 
 app = express();
@@ -26,6 +28,7 @@ cron.schedule(cronJobInterval, async () => {
 
     console.log(`Checking at ${Date()}.`);
     // await checkGiant();
+    // await checkRiteAid();
     await checkWeis();
     await checkLancaster();
     await checkMacdonalds();
@@ -36,6 +39,7 @@ cron.schedule(cronJobInterval, async () => {
     await checkCNS();
     await checkGeisinger();
     await checkBirdsboro();
+    await checkIndependent();
     console.log('Done checking.');
   } catch (error) {
     console.error(error);
