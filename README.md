@@ -5,7 +5,7 @@
 Forked from James Kip's [Texas Vaccine Updates](https://github.com/jameskip/texas-vaccines) (thank you James!! ♥️)
 
 
-If you would like to contribute a crawler just follow the folder structure and add your file to `crawlers/`
+If you would like to build/contribute a crawler, check out the [Crawler How To](https://github.com/jherrm/pennsylvania-vaccines/#crawler-how-to) below.
 
 
 ### Install
