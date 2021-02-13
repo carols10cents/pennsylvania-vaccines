@@ -32,10 +32,6 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/BLAHBLAHBLAHBLAHBLAHBLAHBLAHB
 You'll need to create an app in Slack to get working webhook URLs.
 
 # Crawler How To
-### Step 0: Duplicate existing crawler
-
-
-
 ### Step 1: Collect Facility Links
 
 <img alt="Pennsylvania Vaccine Provider Information map" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/pa-map.png">
@@ -49,7 +45,11 @@ Go through each link in the spreadsheet and take a look to see if the facility's
 
 Try to find the page that the facility will update once appointments are available. *Our goal is to visit that page many times until we detect it changes, which signals that appointments may be available.*
 
-### Step 3: Extract the request
+### Step 3: Duplicate existing crawler
+
+Make a copy of the [example.js](https://github.com/jherrm/pennsylvania-vaccines/blob/main/crawlers/example.js) crawler. Name it something like `pharmacy-name.js` and save it in the `crawlers` folder.
+
+### Step 4: Extract the request
 
 Open up the dev tools (I use Chrome) and navigate to the `Network` tab. Refresh the website to capture the network requests. We need to find the request that corresponds with the text on screen that will change once the appointments are available. In the example below, Birdsboro Pharmacy prints `No Availability` when there are no appointments, so we're going to find the request that returns that text. Try selecting the top request first, then go to the `Response` tab in the section on the right side of the dev tools. Hit `ctrl`/`cmd` + `F` to search the response for the text (`No Availability`). If you don't find it, keep searching the other requests' responses until you find it.
 
