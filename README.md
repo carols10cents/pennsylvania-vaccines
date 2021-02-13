@@ -38,7 +38,7 @@ You'll need to create an app in Slack to get working webhook URLs.
 
 ### Step 1: Collect Facility Links
 
-<img height="800" alt="Pennsylvania Vaccine Provider Information map" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/pa-map.png">
+<img height="958" alt="Pennsylvania Vaccine Provider Information map" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/pa-map.png">
 
 Visit the [Pennsylvania Vaccine Provider Information map](https://padoh.maps.arcgis.com/apps/webappviewer/index.html?id=e6f78224c6fe4313a1f70b56f553c357), pan and zoom the view to select the area you're interested in.
 
@@ -53,7 +53,12 @@ Try to find the page that the facility will update once appointments are availab
 
 Open up the dev tools (I use Chrome) and navigate to the `Network` tab. Refresh the website to capture the network requests. We need to find the request that corresponds with the text on screen that will change once the appointments are available. In the example below, Birdsboro Pharmacy prints `No Availability` when there are no appointments, so we're going to find the request that returns that text. Try selecting the top request first, then go to the `Response` tab in the section on the right side of the dev tools. Hit `ctrl`/`cmd` + `F` to search the response for the text (`No Availability`). If you don't find it, keep searching the other requests' responses until you find it.
 
-<img height="800" alt="Birdsboro webpage with devtools" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example1.png">
+<img height="942" alt="Birdsboro webpage with devtools" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example1.png">
 
 Once you've found the request, it's time to copy the request code so that we can insert it into our crawler. Right click on the request, select `Copy` -> `Copy as Node.js fetch`
+
+<img height="939" alt="Copy as Node.js fetch" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example2.png">
+
+<img height="615" alt="Copy as Node.js fetch" src="https://github.com/jherrm/pennsylvania-vaccines/blob/main/example2.png">
+
 Paste that Node.js fetch into your text editor, and use the fetch URL as the `dataUrl`. You can use the websites main URL as the `scheduleURL`, and change the response handler's conditional to test if the `No Availability` text exists when we retrieve the response. Don't forget to change the `checkExample` function definition and export to match whatever the name of the facility is (e.g. `checkBirdsboro`), and finally update `index.js` to include your new crawler by adding `await checkBirdsboro()` to the main function.
