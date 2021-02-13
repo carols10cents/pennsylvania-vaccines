@@ -11,8 +11,8 @@ const checkChambers = require('./crawlers/chambers');
 const checkCNS = require('./crawlers/cns');
 const checkGeisinger = require('./crawlers/geisinger');
 const checkGiant = require('./crawlers/giant');
-const cronJobInterval = '*/3 * * * *';
 const checkBirdsboro = require('./crawlers/birdsboro');
+const cronJobInterval = '*/2 * * * *';
 
 app = express();
 
