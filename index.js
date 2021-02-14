@@ -15,7 +15,8 @@ const checkBirdsboro = require('./crawlers/birdsboro');
 const checkIndependent = require('./crawlers/independent');
 const checkRiteAid = require('./crawlers/rite-aid');
 const checkGiantEagle = require('./crawlers/giant-eagle');
-const cronJobInterval = '*/2 * * * *';
+
+const cronJobInterval = `*/${process.env.MINUTES || 5} * * * *`;
 
 app = express();
 
