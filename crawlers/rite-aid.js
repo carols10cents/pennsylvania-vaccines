@@ -352,7 +352,8 @@ const options = {
     "sec-fetch-site": "same-origin",
     "sec-gpc": "1",
     "x-requested-with": "XMLHttpRequest",
-    "cookie": "check=true; AMCVS_3B2A35975CF1D9620A495FA9%40AdobeOrg=1; AMCV_3B2A35975CF1D9620A495FA9%40AdobeOrg=77933605%7CMCIDTS%7C18670%7CMCMID%7C18647157766809783586223901735054475175%7CMCOPTOUT-1613095921s%7CNONE%7CvVersion%7C4.5.1"
+    "cookie": "check=true; AMCVS_3B2A35975CF1D9620A495FA9%40AdobeOrg=1; AMCV_3B2A35975CF1D9620A495FA9%40AdobeOrg=77933605%7CMCIDTS%7C18670%7CMCMID%7C18647157766809783586223901735054475175%7CMCOPTOUT-1613095921s%7CNONE%7CvVersion%7C4.5.1",
+    "User-Agent": process.env.USER_AGENT
   },
   "referrer": "https://www.riteaid.com/pharmacy/apt-scheduler",
   "referrerPolicy": "origin-when-cross-origin",

@@ -21,7 +21,8 @@ const options = {
       "sec-fetch-site": "none",
       "sec-fetch-user": "?1",
       "sec-gpc": "1",
-      "upgrade-insecure-requests": "1"
+      "upgrade-insecure-requests": "1",
+      "User-Agent": process.env.USER_AGENT
     },
     "referrerPolicy": "strict-origin-when-cross-origin",
     "body": null,

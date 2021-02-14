@@ -22,7 +22,8 @@ const options = {
       "sec-fetch-site": "same-origin",
       "sec-gpc": "1",
       "x-requested-with": "XMLHttpRequest",
-      "cookie": "device_id=418b2fb8-305b-4f56-8f5e-ac45cbc4455b; AWSALB=XUqvUZChL16X+msunbhUNMX2wWacmYPtab840EKv+uo/1W9gqwM5WE184Iy8OmyMAG0MYhxTwAW6v1+Ouc71KIO7MILJTuorjJrLiHOImVYtx89RRHkT8wy0JaK1; AWSALBCORS=XUqvUZChL16X+msunbhUNMX2wWacmYPtab840EKv+uo/1W9gqwM5WE184Iy8OmyMAG0MYhxTwAW6v1+Ouc71KIO7MILJTuorjJrLiHOImVYtx89RRHkT8wy0JaK1; PHPSESSID=2kc4203ekbmg50og1fmb0breuh"
+      "cookie": "device_id=418b2fb8-305b-4f56-8f5e-ac45cbc4455b; AWSALB=XUqvUZChL16X+msunbhUNMX2wWacmYPtab840EKv+uo/1W9gqwM5WE184Iy8OmyMAG0MYhxTwAW6v1+Ouc71KIO7MILJTuorjJrLiHOImVYtx89RRHkT8wy0JaK1; AWSALBCORS=XUqvUZChL16X+msunbhUNMX2wWacmYPtab840EKv+uo/1W9gqwM5WE184Iy8OmyMAG0MYhxTwAW6v1+Ouc71KIO7MILJTuorjJrLiHOImVYtx89RRHkT8wy0JaK1; PHPSESSID=2kc4203ekbmg50og1fmb0breuh",
+      "User-Agent": process.env.USER_AGENT
     },
     "referrer": "https://macdonaldspharmacycovid19vaccine.as.me/schedule.php",
     "referrerPolicy": "same-origin",

@@ -23,13 +23,28 @@ npm start
 npm test
 ```
 
+### Configure
+
 Here is a `.env` file that will get you up and running. Just save it as `.env` in this project.
 ```
 NODE_ENV=development
 PORT=1919
+USER_AGENT="Pennsylvania Vaccine watching bot [your email address here]"
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
 ```
 You'll need to create an app in Slack to get working webhook URLs.
+
+# Slack How To
+
+- Create or sign in to a Slack workspace where you have permissions to manage apps (TODO: what permissions exactly?)
+- In the menu for the Slack workspace in the upper left that opens when you click on the name of the workspace, go to "Administration" then "Manage apps"
+- Click on "Build" in the upper right. This goes to https://api.slack.com/apps
+- Create a new app, pick a name, and pick the workspace you want to add it to
+- Under Settings -> Basic Information, toggle open "Add features and functionality", and click "Incoming webhooks".
+- Activate Incoming Webhooks by turning the switch to "on".
+- Scroll down and under "Webhook URLs for your Workspace", click the "Add New Webhook to Workspace" button.
+- Pick a channel for the bot to post to
+- Copy the webhook URL. Now you have a value for your `.env` file.
 
 # Crawler How To
 ### Step 1: Collect Facility Links

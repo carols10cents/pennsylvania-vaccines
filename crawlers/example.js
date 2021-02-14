@@ -26,7 +26,8 @@ const options = {
       "sec-fetch-site": "same-origin",
       "sec-gpc": "1",
       "x-requested-with": "XMLHttpRequest",
-      "cookie": ""
+      "cookie": "",
+      "User-Agent": process.env.USER_AGENT
     },
     "referrer": "https://example",
     "referrerPolicy": "same-origin",

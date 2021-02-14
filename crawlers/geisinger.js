@@ -22,7 +22,8 @@ const options = {
       "sec-fetch-user": "?1",
       "sec-gpc": "1",
       "upgrade-insecure-requests": "1",
-      "cookie": "ASP.NET_SessionId=yjujtkwlgphs5qswvivesoxf; SC_ANALYTICS_GLOBAL_COOKIE=9584c586092c4778a00441ff0d6fb4af|False; __RequestVerificationToken=jmfVrc2DbEYHoFzuX_AanmnLEPbx4aNT6RJL8O4CMaXJPnIxk_Eg0aT6CsXaqzQHlCeTqwcaGktf6x2Ik_2a1hvFU52AdZt-ZRh3lfpUyaM1"
+      "cookie": "ASP.NET_SessionId=yjujtkwlgphs5qswvivesoxf; SC_ANALYTICS_GLOBAL_COOKIE=9584c586092c4778a00441ff0d6fb4af|False; __RequestVerificationToken=jmfVrc2DbEYHoFzuX_AanmnLEPbx4aNT6RJL8O4CMaXJPnIxk_Eg0aT6CsXaqzQHlCeTqwcaGktf6x2Ik_2a1hvFU52AdZt-ZRh3lfpUyaM1",
+      "User-Agent": process.env.USER_AGENT
     },
     "referrerPolicy": "strict-origin-when-cross-origin",
     "body": null,
