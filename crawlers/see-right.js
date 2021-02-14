@@ -18,7 +18,8 @@ const options = {
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-site",
-      "sec-gpc": "1"
+      "sec-gpc": "1",
+      "User-Agent": process.env.USER_AGENT
     },
     "referrer": "https://seerightrx.appointlet.com/",
     "referrerPolicy": "strict-origin-when-cross-origin",

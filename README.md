@@ -29,6 +29,7 @@ Here is a `.env` file that will get you up and running. Just save it as `.env` i
 ```
 NODE_ENV=development
 PORT=1919
+USER_AGENT="Pennsylvania Vaccine watching bot [your email address here]"
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
 ```
 You'll need to create an app in Slack to get working webhook URLs.

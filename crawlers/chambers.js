@@ -21,7 +21,8 @@ const options = {
     "sec-fetch-site": "same-origin",
     "sec-gpc": "1",
     "x-requested-with": "XMLHttpRequest",
-    "cookie": "device_id=493a59e6-cfdb-4985-9cb5-1e1692169226; PHPSESSID=43t4c9r7l4iomaui6g13lliiet; AWSALB=/9Yj465q0mS8myp13NTfsM6+YXCbzVULMv/HOPWwK/klWkngJtq/t0rbCeX4idFtro4VwjUbNh45xkw1gbkDlmgGApipRqHA2UHbzUVpfvjg+kT7+ACCfhCxHyU4; AWSALBCORS=/9Yj465q0mS8myp13NTfsM6+YXCbzVULMv/HOPWwK/klWkngJtq/t0rbCeX4idFtro4VwjUbNh45xkw1gbkDlmgGApipRqHA2UHbzUVpfvjg+kT7+ACCfhCxHyU4"
+    "cookie": "device_id=493a59e6-cfdb-4985-9cb5-1e1692169226; PHPSESSID=43t4c9r7l4iomaui6g13lliiet; AWSALB=/9Yj465q0mS8myp13NTfsM6+YXCbzVULMv/HOPWwK/klWkngJtq/t0rbCeX4idFtro4VwjUbNh45xkw1gbkDlmgGApipRqHA2UHbzUVpfvjg+kT7+ACCfhCxHyU4; AWSALBCORS=/9Yj465q0mS8myp13NTfsM6+YXCbzVULMv/HOPWwK/klWkngJtq/t0rbCeX4idFtro4VwjUbNh45xkw1gbkDlmgGApipRqHA2UHbzUVpfvjg+kT7+ACCfhCxHyU4",
+    "User-Agent": process.env.USER_AGENT
   },
   "referrer": "https://chambersclinical.as.me/moderna1",
   "referrerPolicy": "same-origin",

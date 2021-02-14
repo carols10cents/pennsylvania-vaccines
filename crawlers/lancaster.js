@@ -22,7 +22,8 @@ const options = {
       "sec-fetch-user": "?1",
       "sec-gpc": "1",
       "upgrade-insecure-requests": "1",
-      "cookie": "CP_IsMobile=false; ASP.NET_SessionId=mei4dyvzvnph5iqskmijxiky; __RequestVerificationToken=awvRd4Jp4emYsirXVzpmHm91RFM-A6-EdFNLe8dl-U5HcmkIMmxkpBA9-WsiIdu11gRegJqXVN3RNUVO5R3CXoM67PtIsm-SuVEahN9cpxU1; dpi=2; viewportWidth=960; viewportHeight=798; screenWidth=1440; screenHeight=900; CP_TrackBrowser={\"doNotShowLegacyMsg\":false,\"supportNewUI\":true,\"legacy\":false,\"isMobile\":false}; responsiveGhost=0"
+      "cookie": "CP_IsMobile=false; ASP.NET_SessionId=mei4dyvzvnph5iqskmijxiky; __RequestVerificationToken=awvRd4Jp4emYsirXVzpmHm91RFM-A6-EdFNLe8dl-U5HcmkIMmxkpBA9-WsiIdu11gRegJqXVN3RNUVO5R3CXoM67PtIsm-SuVEahN9cpxU1; dpi=2; viewportWidth=960; viewportHeight=798; screenWidth=1440; screenHeight=900; CP_TrackBrowser={\"doNotShowLegacyMsg\":false,\"supportNewUI\":true,\"legacy\":false,\"isMobile\":false}; responsiveGhost=0",
+      "User-Agent": process.env.USER_AGENT
     },
     "referrerPolicy": "strict-origin-when-cross-origin",
     "body": null,

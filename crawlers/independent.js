@@ -87,7 +87,8 @@ const checkIndependent = async () => {
         "sec-fetch-site": "same-origin",
         "sec-gpc": "1",
         "x-requested-with": "XMLHttpRequest",
-        "cookie": "device_id=5ce7b3be-8db9-4272-b17c-14bfce52ce5b; PHPSESSID=seipncvddg6msgf7ecc4ijtnis; AWSALB=h3PjireTcdWa1WMi8RMGbgE8J2CQ1c1aNsZ5x14/08UmVvXKzsA0AfKY+8+xvAki9xFqsgK2bCjwsaStbsf53BqKTNnAKLCCOLXXHD3zHka9UW6u3lGQOC0Iey/l; AWSALBCORS=h3PjireTcdWa1WMi8RMGbgE8J2CQ1c1aNsZ5x14/08UmVvXKzsA0AfKY+8+xvAki9xFqsgK2bCjwsaStbsf53BqKTNnAKLCCOLXXHD3zHka9UW6u3lGQOC0Iey/l"
+        "cookie": "device_id=5ce7b3be-8db9-4272-b17c-14bfce52ce5b; PHPSESSID=seipncvddg6msgf7ecc4ijtnis; AWSALB=h3PjireTcdWa1WMi8RMGbgE8J2CQ1c1aNsZ5x14/08UmVvXKzsA0AfKY+8+xvAki9xFqsgK2bCjwsaStbsf53BqKTNnAKLCCOLXXHD3zHka9UW6u3lGQOC0Iey/l; AWSALBCORS=h3PjireTcdWa1WMi8RMGbgE8J2CQ1c1aNsZ5x14/08UmVvXKzsA0AfKY+8+xvAki9xFqsgK2bCjwsaStbsf53BqKTNnAKLCCOLXXHD3zHka9UW6u3lGQOC0Iey/l",
+        "User-Agent": process.env.USER_AGENT
       },
       "referrer": "https://covid-19schedulinglink.as.me/vaccine",
       "referrerPolicy": "same-origin",

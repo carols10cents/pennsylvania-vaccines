@@ -23,7 +23,8 @@ const options = {
     "sec-fetch-user": "?1",
     "sec-gpc": "1",
     "upgrade-insecure-requests": "1",
-    "cookie": "sesh=ZPU3xvPN; JSESSIONID=13524718EC0B96BDEE24BC4C1E98B8F3"
+    "cookie": "sesh=ZPU3xvPN; JSESSIONID=13524718EC0B96BDEE24BC4C1E98B8F3",
+    "User-Agent": process.env.USER_AGENT
   },
   "referrer": "https://birdsboropharmacy.youcanbook.me/",
   "referrerPolicy": "strict-origin-when-cross-origin",
