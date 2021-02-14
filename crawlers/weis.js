@@ -5,7 +5,7 @@ const renderStaticSlackMessage = require('../utils/renderStaticSlackMessage');
 
 dotenv.config();
 
-const dataURL = 'https://c.ateb.com/3f647956b456425d9c12360db8e4fdb4/';
+const dataURL = 'https://c.ateb.com/8d8feb6dce7d4d598f753362d06d1e64/';
 const scheduleURL = dataURL;
 const name = 'Weis'
 const url = process.env.SLACK_WEBHOOK_URL;
