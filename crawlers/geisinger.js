@@ -39,7 +39,7 @@ const checkGeisinger = async () => {
         const response = await fetch(dataURL, options);
         data = await response.text();
         if (!data.includes('appointments are currently unavailable')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

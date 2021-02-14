@@ -104,7 +104,7 @@ const checkIndependent = async () => {
           if (
             !data.includes('No times are available in the next month')
           ) {
-            console.log(data);
+            console.log(`${facility.name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, facility.name));
           }
         } catch (e) {

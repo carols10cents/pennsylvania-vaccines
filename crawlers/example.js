@@ -45,7 +45,7 @@ const options = {
         data = await response.text();
         // Change the following text to match the "unavailable" message from the website
         if (!data.includes('No times are available in the next month')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

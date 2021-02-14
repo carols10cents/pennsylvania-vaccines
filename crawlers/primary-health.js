@@ -36,7 +36,7 @@ const options = {
         const response = await fetch(scheduleURL, options);
         data = await response.text();
         if (!data.includes('Please continue to check this webpage for vaccine and appointment availability.')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

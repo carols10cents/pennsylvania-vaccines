@@ -42,7 +42,7 @@ const checkPrimaryHealth = async () => {
         const response = await fetch(dataURL, options);
         data = await response.text();
         if (!data.includes('Please continue to check this webpage for vaccine and appointment availability.')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, `${name}-${zip}`));
         }
       } catch (e) {

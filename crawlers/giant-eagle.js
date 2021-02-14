@@ -33,7 +33,7 @@ const options = {
         const response = await fetch(dataURL, options);
         data = await response.text();
         if (!data.includes('There are currently no COVID-19 vaccine appointments available.')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

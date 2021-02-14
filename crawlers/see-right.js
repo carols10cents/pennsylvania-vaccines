@@ -36,7 +36,7 @@ const options = {
         const response = await fetch(dataURL, options);
         data = await response.text();
         if (data.toString().trim() !== '[]') {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

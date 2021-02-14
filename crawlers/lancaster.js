@@ -39,7 +39,7 @@ const checkLancaster = async () => {
         const response = await fetch(scheduleURL, options);
         data = await response.text();
         if (!data.includes('registration is not yet available')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

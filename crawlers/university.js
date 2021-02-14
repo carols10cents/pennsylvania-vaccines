@@ -67,6 +67,7 @@ const checkUniversity = async () => {
       }
       if (!isEmpty(data.AllDays)) {
         try {
+          console.log(`University content: \n${data}`);
           await webhook.send(renderStaticSlackMessage(universityURL));
         } catch (e) {
           console.error(e);

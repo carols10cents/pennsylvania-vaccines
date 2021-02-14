@@ -38,7 +38,7 @@ const checkCNS = async () => {
         const response = await fetch(dataURL, options);
         data = await response.text();
         if (!data.includes('Our waiting list is currently at max capacity')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

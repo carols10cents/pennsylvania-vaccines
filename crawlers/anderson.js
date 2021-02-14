@@ -39,7 +39,7 @@ const options = {
         const response = await fetch(scheduleURL, options);
         data = await response.text();
         if (!data.includes('Due Due to limited COVID-19 vaccine supply we are not')) {
-            console.log(data)
+            console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
       } catch (e) {

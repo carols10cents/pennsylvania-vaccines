@@ -325,7 +325,7 @@ const options = {
           if (
             !data.includes('{"slots":{"1":false,"2":false}}')
           ) {
-            console.log(data);
+            console.log(`${facility.name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, `${facility.name} ${facility.address}`));
           }
         } catch (e) {
