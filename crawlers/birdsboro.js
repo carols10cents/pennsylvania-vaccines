@@ -41,7 +41,7 @@ const options = {
         const response = await fetch(dataURL, options);
         data = await response.text();
 
-        if (!data.includes('No Availability')) {
+        if (!data.includes('No Availability') && !data.includes('Hi! While we would love to be able to let you book right now, this calendar is set to stop taking bookings after a certain date, which has now sadly passed...')) {
             console.log(data)
             await webhook.send(renderStaticSlackMessage(scheduleURL, name));
         }
