@@ -41,7 +41,7 @@ const checkButlerHealth = async () => {
       try {
         const response = await fetch(dataURL, options);
         data = await response.text();
-        if (!data.includes('Select a Time Slot')) {
+        if (data.includes('Select a Time Slot')) {
             console.log(`${name} content: \n${data}`);
             await webhook.send(renderStaticSlackMessage(scheduleURL, `${name}-${zip}`));
         }
