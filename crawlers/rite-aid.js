@@ -323,6 +323,7 @@ const options = {
           const response = await fetch(`https://www.riteaid.com/services/ext/v2/vaccine/checkSlots?storeNumber=${facility.storeNumber}`, options);
           data = await response.text();
           if (
+            response.status === 200 &&
             !data.includes('{"slots":{"1":false,"2":false}}')
           ) {
             console.log(`${facility.name} content: \n${data}`);
