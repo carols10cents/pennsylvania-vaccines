@@ -10,7 +10,7 @@ const dataURL = 'https://butlerhealth.rsvpify.com/';
 // Change scheduleUrl to the URL where you will go to schedule the appointment
 const scheduleURL = 'https://butlerhealth.rsvpify.com/'
 // Change the name of the pharmacy so the notification can tell you what's available
-const name = 'Butler Memorial Hospital (County Residents Only)'
+const name = 'Butler Memorial Hospital (Butler, Clarion, Forest County Residents Only)'
 // Include the zip code so viewers can decide whether it's too far away
 const zip = '16001'
 
